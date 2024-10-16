@@ -1,6 +1,8 @@
 # music_library_system
 Do note that this is just a student project for the requirements in my college school.
+
 **Milestone 1 - HTML and CSS Template (Francis John H. Alintano)**
+
 Key Features Overview or Project Structure
 
 Music Uploading Interface
