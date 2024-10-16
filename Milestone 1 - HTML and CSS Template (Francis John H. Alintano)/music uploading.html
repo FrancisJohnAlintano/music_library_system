@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Music Uploading Section</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+	<link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\stylesheet.css">
+</head>
+<body>
+    <div class="upload-container">
+        <h2>Upload Your Music</h2>
+		
+		<!-- File Upload Section -->
+        <div class="upload-section">
+			<!-- Drag-and-drop area for file uploads -->
+            <div class="drag-drop" id="drag-drop-area">
+                <p>Drag & drop your audio files here</p>
+				<!-- File input for traditional uploads -->
+                <input type="file" id="file-upload" multiple accept="audio/*" />
+            </div>
+			<!-- Button for traditional file upload -->
+            <label class="file-upload-button" for="file-upload">Choose File</label>
+        </div>
+        
+		<!-- Metadata Entry Section -->
+        <div class="metadata-entry">
+            <h3>Track Metadata</h3>
+            <form>
+				<!-- Track Title Input -->
+                <div class="form-group">
+                    <label for="track-title">Title <span class="tooltip">?</span></label>
+                    <input type="text" id="track-title" required />
+                    <span class="tooltip-text">Enter the title of the track</span>
+                </div>
+				<!-- Artist Name Input -->
+                <div class="form-group">
+                    <label for="track-artist">Artist <span class="tooltip">?</span></label>
+                    <input type="text" id="track-artist" required />
+                    <span class="tooltip-text">Enter the artist's name</span>
+                </div>
+				<!-- Genre Input -->
+                <div class="form-group">
+                    <label for="track-genre">Genre <span class="tooltip">?</span></label>
+                    <input type="text" id="track-genre" required />
+                    <span class="tooltip-text">Enter the genre of the track</span>
+                </div>
+				<!-- Cover Image Input -->
+                <div class="form-group">
+                    <label for="cover-image">Cover Image <span class="tooltip">?</span></label>
+                    <input type="file" id="cover-image" accept="image/*" />
+                    <span class="tooltip-text">Upload a cover image for the track</span>
+                </div>
+				<!-- Submit Button -->
+                <button type="submit" class="submit-button">Upload Track</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript For Drag-and-Drop Functionality
+        const dragDropArea = document.getElementById('drag-drop-area');
+		
+		// Prevent default behavior when dragging over the drop area
+        dragDropArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dragDropArea.classList.add('drag-over');
+        });
+		
+		// Remove drag-over effect when dragging leaves the area
+        dragDropArea.addEventListener('dragleave', () => {
+            dragDropArea.classList.remove('drag-over');
+        });
+		
+		// Handle file drop
+        dragDropArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dragDropArea.classList.remove('drag-over');
+            const files = e.dataTransfer.files;
+			// Assign dropped files to the file input
+            document.getElementById('file-upload').files = files;
+        });
+    </script>
+</body>
+</html>

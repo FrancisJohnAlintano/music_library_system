@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Playlist Management Section</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\stylesheet.css">
+</head>
+<body>
+    <div class="playlist-container">
+        <h2>Your Playlists</h2>
+		
+		<!-- Playlist Dashboard -->
+        <div class="playlist-dashboard">
+			<!-- Individual Playlist Display -->
+            <div class="playlist">
+                <h3 class="playlist-title">Playlist Title 1</h3>
+                <p>Tracks: 5</p> <!-- Number of music tracks in the playlist -->
+                <p>Privacy: Public</p> <!-- Privacy setting of the playlist -->
+                <div class="playlist-actions">
+					<!-- Button to edit the playlist -->
+                    <button class="edit-button">Edit</button>
+					<!-- Button to delete the playlist with confirmation -->
+                    <button class="delete-button" onclick="confirmDelete()">Delete</button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h3 class="playlist-title">Playlist Title 2</h3>
+                <p>Tracks: 3</p>
+                <p>Privacy: Private</p>
+                <div class="playlist-actions">
+                    <button class="edit-button">Edit</button>
+                    <button class="delete-button" onclick="confirmDelete()">Delete</button>
+                </div>
+            </div>
+            <!-- Adding more music playlists as needed -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript Function To Confirm Playlist Deletion
+		function confirmDelete() {
+            const confirmed = confirm("Are you sure you want to delete this playlist?");
+            if (confirmed) {
+                alert("Playlist deleted!"); // Notify user of deletion
+                // A code to delete the playlist
+            }
+        }
+    </script>
+</body>
+</html>

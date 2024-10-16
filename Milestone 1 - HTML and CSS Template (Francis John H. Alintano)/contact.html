@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Online Music.Com</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css\normalize.css">
+		<link rel="stylesheet" href="css\stylesheet.css">
+	</head>
+	<body>
+	
+		<div style="border:0px;width:50%;margin:8px auto;padding:5px;">
+		
+			<div class="logo" style="float:right;">
+				<img src="images\logo.png" />
+			</div>
+			<p style="color:#55b1f0;font-family:Flubber;font-size:52px;">ONLINE</p>
+			<p style="margin:-25px 0px 0px 180px;font-family:Flubber;font-size:85px;"><span style="color:#000;">MUSIC</span><span style="color:#d61a00;">.COM</span></p>
+			<p style="margin:-15px 0px 0px 250px;font-family:Calibri;font-size:30px;">Buy your music here</p>
+			
+			<div style="border:0px;width:400px;margin:10px auto;padding:10px;float:right;">
+				<p class="main_menu">CONTACT US</p>
+				<form>
+					<table class="contact_table">
+						<tr>
+							<td>
+								<label class="contact_label" for="first_name">First Name:</label>
+							</td>
+							<td>
+								<input class="contact_input" type="text" name="first_name" id="first_name" placeholder = "Name" required maxlength = "50" size = "30"  />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="contact_label" for = "last_name">Last Name:</label>
+							</td>
+							<td>
+								<input class="contact_input" type = "text" name = "last_name" id = "last_name" placeholder = "Family Name" required maxlength = "50" size = "30" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="contact_label" for = "middle_initial">Middle Initial:</label>
+							</td>
+							<td>
+								<input class="contact_input" type = "text" name = "middle_initial" id = "middle_initial" placeholder = "Middle Initial" required maxlength = "50" size = "30" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="contact_label" for = "age">Age:</label>
+							</td>
+							<td>
+								<input class="contact_input" type = "number" name = "age" id = "age" placeholder = "Age" min = "1" max = "200" step = "1" required maxlength = "50" size = "30" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="contact_label" for = "address">Address:</label>
+							</td>
+							<td>
+								<input class="contact_input" type = "text" name = "address" id = "address" placeholder = "Home Address" required maxlength = "80" size = "30" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="contact_label" for = "gender">Gender:</label>
+							</td>
+							<td>
+								<input type = "radio" id = "male" name = "gender" value = "male" />
+								<label class="contact_radio" for = "male">Male</label>
+								<input type = "radio" id = "female" name = "gender" value = "female" />
+								<label class="contact_radio" for = "female">Female</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="contact_label" for = "email">Email Address:</label>
+							</td>
+							<td>
+								<input class="contact_input" type = "email" name = "email" id = "email" placeholder = "Email" required maxlength = "80" size = "30" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="contact_label" for = "contact">Contact #:</label>
+							</td>
+							<td>
+								<input class="contact_input" type = "tel" name = "contact" id = "contact" placeholder = "Telephone Number" required maxlength = "30" size = "30" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label class="contact_label" for = "message">Message:</label>
+							</td>
+							<td>
+								<textarea class="contact_input" name = "message" id = "message" placeholder = "Comments" required maxlength = "1000" cols = "31" rows = "5"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan = "2" style = "text-align:center">
+								<input class="contact_button" type = "Submit" value = "Submit" />
+								<button class="contact_button" type = "reset">Reset</button>
+							</td>
+						</tr>
+					</table>
+				</form>				
+			</div>
+			
+			<p class="main_menu">
+				<a href="home.html">HOME</a>
+			</p>
+			<p class="main_menu">GENRE</p>
+			<ul class="sub_menu">
+				<li><a href="#">Acoustic Music</a></li>
+				<li><a href="#">Country Music</a></li>
+				<li><a href="#">Folk Music</a></li>
+				<li><a href="#">Jazz Music</a></li>
+				<li><a href="#">Orchestra Music</a></li>
+				<li><a href="#">Reggae Music</a></li>
+				<li><a href="#">Rock Music</a></li>
+				<li><a href="#">Soundtrack</a></li>
+			</ul>
+			<p class="main_menu">WHATS NEW</p>
+			<p class="main_menu">
+				<a href="about.html">ABOUT US</a>
+			</p>
+			<p class="main_menu">CONTACT US</p>
+			<p>
+				<button onclick="alert('You\'re in the contact us page of Online Music.Com, thank you.');">
+					Where I Am?
+				</button>
+			</p>
+					
+		</div>
+		
+		<div class="rights">
+			<p>ALL RIGHTS RESERVED 2024 (FJA)<p>
+		</div>
+
+	</body>
+</html>

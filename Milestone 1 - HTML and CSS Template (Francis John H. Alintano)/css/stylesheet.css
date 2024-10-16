@@ -1,0 +1,496 @@
+* {
+	border:0px;
+	margin:0px;
+	padding:0px;
+}
+
+.main_menu {
+	color:#bb3941;
+	font-family:"Calibri";
+	font-size:30px;
+}
+
+.main_menu a, .main_menu a:active, .main_menu a:visited  {
+	color:#bb3941;
+	text-decoration:none;
+}
+
+.main_menu a:hover {
+	color:#bb3941;
+	text-decoration:underline;
+}
+
+.sub_menu {
+	color:#000;
+	font-family:"Calibri";
+	font-size:20px;
+}
+
+.sub_menu li {
+	list-style-type:none;
+	margin:0px 0px 5px 25px;
+}
+
+.sub_menu li a {
+	text-decoration:none;
+	color:#000;
+	padding:5px;
+	border-radius:3px;
+}
+
+.sub_menu li a:hover {	
+	color:#fff;
+	background-color:#bb3941;
+	transition:0.5s;
+}
+
+.item_list {				
+	font-family:"Calibri";
+	font-size:30px;
+}
+
+.rights {	
+	width:50%;	
+	border:0px;
+	margin:0px auto;
+	padding:0px;		
+}
+
+.rights p {
+	color:#bb3941;
+	font-family:"Calibri";
+	font-size:12px;
+	text-align:left;	
+}
+
+.logo:hover {
+	cursor:pointer;
+	transition: all 2s linear;
+	transform: rotate(360deg);
+	
+}
+
+.album {
+	/*border: solid 1px #f00;*/
+	border: solid 1px #fff;
+	margin:3px;
+	padding:3px;
+	text-align:center;	
+}
+
+.album a {
+	color:#000;			
+	text-decoration:none;
+}
+
+.album:hover {	
+	cursor:pointer;
+	transition: all 2s linear;
+	transform: rotateY(360deg);
+	border: solid 1px #bb3941;
+}
+
+.contact_table {
+	width: 100%;
+	border: 0px;
+}
+
+.contact_table td {	
+	border: 0px;
+	padding: 3px;
+}
+
+.contact_label {
+	color:#000;
+	font-family:"Calibri";
+	font-size:16px;
+	font-weight:bold;
+}
+
+.contact_input {
+	color:#000;
+	font-family:"Calibri";
+	font-size:16px;
+	border: solid 1px #808080;
+	padding:2px;
+}
+
+.contact_radio {
+	color:#000;
+	font-family:"Calibri";
+	font-size:16px;
+	border: solid 1px #ffffff;
+	padding:2px;
+}
+
+.contact_button {
+	color:#000;
+	font-family:"Calibri";
+	font-size:16px;
+	font-weight:bold;
+	border: solid 1px #808080;
+	padding:5px;
+	width:80px;
+}
+
+button {
+	border: solid 1px #000;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 5px;
+	width: 150px;
+	
+}
+
+button:hover {	
+	border-radius: 5px;
+	color: #bb3941;
+	font-weight: bold;
+}
+
+/*For Music Uploading Section*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.upload-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.upload-section {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    margin-bottom: 20px; /* Space below the upload section */
+}
+
+.drag-drop {
+    border: 2px dashed #ccc; /* Dashed border for drag-and-drop area */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px; /* Space below the area */
+    transition: border-color 0.3s;
+}
+
+.drag-drop.drag-over {
+    border-color: #007BFF;
+}
+
+.file-upload-button {
+    display: inline-block; /* Inline button */
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.metadata-entry {
+    margin-top: 20px; /* Space above metadata entry */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space below each form group */
+}
+
+label {
+    display: block; /* Block-level labels */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tooltip {
+    cursor: help; /* Help cursor for tooltips */
+    color: #007BFF; /* Blue color for tooltip indicators */
+}
+
+.tooltip-text {
+    display: none;
+    background: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute; /* Position tooltip */
+    z-index: 1000; /* Ensure tooltip is above other elements */
+    margin-top: 5px; /* Space above tooltip */
+}
+
+.tooltip:hover + .tooltip-text {
+    display: block; /* Show tooltip on hover */
+}
+
+/*For Music Browsing Section*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.browsing-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.browsing-header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and search bar */
+    align-items: center;
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.filter-section {
+    margin-bottom: 20px; /* Space below the filter section */
+}
+
+.filter-section h3 {
+    margin-bottom: 10px; /* Space below the section title */
+}
+
+.filter-section label {
+    display: block;
+    margin-top: 10px; /* Space above labels */
+}
+
+.filter-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Space below dropdowns */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.music-results {
+    margin-top: 20px; /* Space above the results section */
+}
+
+.music-results h3 {
+    margin-bottom: 15px; /* Space below the results title */
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Space below each track */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.album-cover {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    margin-right: 15px; /* Space to the right of the cover */
+}
+
+.track-info {
+    flex: 1; /* Allowing this div to grow and fill available space */
+}
+
+.track-name {
+    margin: 0;
+    font-size: 18px;
+}
+
+.artist-name,
+.album-name {
+    margin: 5px 0; /* Space above and below names */
+    color: #666;
+}
+
+.play-button {
+    padding: 8px 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    background: #0056b3;
+}
+
+/*For Playlist Management Section*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.playlist-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.playlist-dashboard {
+    margin-top: 20px; /* Space above the dashboard */
+}
+
+.playlist {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px; /* Space below each playlist */
+    background: #fafafa;
+    transition: background 0.3s;
+}
+
+.playlist:hover {
+    background: #f0f0f0;
+}
+
+.playlist-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.playlist-actions {
+    margin-top: 10px;
+}
+
+.edit-button, .delete-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px; /* Space between buttons */
+}
+
+.edit-button {
+    background: #007BFF;
+    color: white;
+}
+
+.edit-button:hover {
+    background: #0056b3;
+}
+
+.delete-button {
+    background: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background: #c82333;
+}
+
+/*For Music Streaming Section*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.streaming-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Space below the track info */
+}
+
+.album-cover {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    margin-right: 15px; /* Space to the right of the cover */
+}
+
+.info {
+    flex: 1;
+}
+
+.track-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.artist-name {
+    margin: 5px 0; /* Space above and below artist name */
+    color: #666;
+}
+
+.music-player {
+    display: flex; /* Flexbox for player layout */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; /* Space below the music player */
+}
+
+.control-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px; /* Space between buttons */
+}
+
+.volume-control {
+    margin-left: 20px; /* Space to the left of the volume control */
+}
+
+.duration {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between time indicators */
+}
+
+#progress-bar {
+    flex: 1; /* Allow the progress bar to grow and fill available space */
+    margin: 0 10px; /* Space to the left and right of the progress bar */
+}

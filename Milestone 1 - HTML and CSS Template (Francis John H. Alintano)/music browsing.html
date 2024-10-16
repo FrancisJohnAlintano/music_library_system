@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Music Browsing Section</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\stylesheet.css">
+</head>
+<body>
+    <div class="browsing-container">
+        <header class="browsing-header">
+			<!-- Logo or brand name -->
+            <div class="logo">Music Library</div>
+			<!-- Search bar for quick music track searches -->
+            <input type="text" class="search-bar" placeholder="Search for tracks, artists or albums...">
+        </header>
+
+        <div class="filter-section">
+            <h3>Filter Music</h3>
+			<!-- Genre Filter Dropdown -->
+            <label for="genre">Genre:</label>
+            <select id="genre">
+                <option value="all">All</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+                <option value="hiphop">Hip-Hop</option>
+            </select>
+			<!-- Release Date Filter Dropdown -->
+            <label for="release-date">Release Date:</label>
+            <select id="release-date">
+                <option value="latest">Latest</option>
+                <option value="oldest">Oldest</option>
+            </select>
+			<!-- User Ratings Filter Dropdown -->
+            <label for="ratings">User Ratings:</label>
+            <select id="ratings">
+                <option value="high">High to Low</option>
+                <option value="low">Low to High</option>
+            </select>
+        </div>
+
+        <div class="music-results">
+            <h3>Results</h3>
+			<!-- Individual Music Track Display -->
+            <div class="track">
+                <img src="album1.jpg" alt="Album Cover" class="album-cover">
+                <div class="track-info">
+                    <h4 class="track-name">Track Title 1</h4>
+                    <p class="artist-name">Artist Name 1</p>
+                    <p class="album-name">Album Name 1</p>
+					<!-- Play Button for the Music Track -->
+                    <button class="play-button">Play</button>
+                </div>
+            </div>
+            <div class="track">
+                <img src="album2.jpg" alt="Album Cover" class="album-cover">
+                <div class="track-info">
+                    <h4 class="track-name">Track Title 2</h4>
+                    <p class="artist-name">Artist Name 2</p>
+                    <p class="album-name">Album Name 2</p>
+                    <button class="play-button">Play</button>
+                </div>
+            </div>
+            <!-- Adding more music tracks as needed -->
+        </div>
+    </div>
+</body>
+</html>

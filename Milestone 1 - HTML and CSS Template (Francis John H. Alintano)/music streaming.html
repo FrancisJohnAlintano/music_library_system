@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>Music Streaming Section</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="css\stylesheet.css">
+</head>
+<body>
+    <div class="streaming-container">
+        <h2>Now Playing</h2>
+		
+		<!-- Track Information Section -->
+        <div class="track-info">
+			<!-- Album Cover Image -->
+            <img src="album-cover.jpg" alt="Album Cover" class="album-cover">
+            <div class="info">
+                <h3 class="track-title">Track Title</h3>
+                <p class="artist-name">Artist Name</p>
+            </div>
+        </div>
+		
+		<!-- Music Player Section -->
+        <div class="music-player">
+            <button class="control-button" id="prev-button">⏮️</button>
+            <button class="control-button" id="play-button">▶️</button>
+			<!-- Pause Button, hidden by default -->
+            <button class="control-button" id="pause-button" style="display: none;">⏸️</button>
+            <button class="control-button" id="next-button">⏭️</button>
+            <!-- Volume Control Slider -->
+			<div class="volume-control">
+                <input type="range" id="volume" min="0" max="100" value="50">
+            </div>
+        </div>
+        
+		<!-- Playback Duration Section -->
+        <div class="duration">
+            <span id="current-time">0:00</span> <!-- Current Playback Time -->
+            <input type="range" id="progress-bar" value="0" min="0" max="100"> <!-- Progress Bar of the Music Track -->
+            <span id="total-time">4:48</span> <!-- Total Track Duration -->
+        </div>
+    </div>
+
+    <script>
+        // JavaScript For Player Functionality
+        const playButton = document.getElementById('play-button');
+        const pauseButton = document.getElementById('pause-button');
+
+        playButton.addEventListener('click', () => {
+            playButton.style.display = 'none';
+            pauseButton.style.display = 'inline-block';
+            // Functionality to Play Music
+        });
+
+        pauseButton.addEventListener('click', () => {
+            pauseButton.style.display = 'none';
+            playButton.style.display = 'inline-block';
+            // Functionality to Pause Music
+        });
+
+        // Other controls (next and previous button) would have similar event listeners
+    </script>
+</body>
+</html>
