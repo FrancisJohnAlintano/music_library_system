@@ -1,46 +1,57 @@
+<!-- Milestone 2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<title>Music Streaming Section</title>
+    <title>Music Streaming Section</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css\normalize.css">
-    <link rel="stylesheet" href="css\stylesheet.css">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJqzLhQ6r1m5Wv5mC7L6O9jD8fiEPY1K5f6rB2eGbi+v6Eyb/xivS8rrdmE6J" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-    <div class="streaming-container">
-        <h2>Now Playing</h2>
-		
-		<!-- Track Information Section -->
-        <div class="track-info">
-			<!-- Album Cover Image -->
-            <img src="album-cover.jpg" alt="Album Cover" class="album-cover">
-            <div class="info">
-                <h3 class="track-title">Track Title</h3>
-                <p class="artist-name">Artist Name</p>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Now Playing</h2>
+        
+        <!-- Track Information Section -->
+        <div class="row mb-4 align-items-center">
+            <div class="col-4">
+                <!-- Album Cover Image -->
+                <img src="album-cover.jpg" alt="Album Cover" class="img-fluid rounded">
             </div>
-        </div>
-		
-		<!-- Music Player Section -->
-        <div class="music-player">
-            <button class="control-button" id="prev-button">⏮️</button>
-            <button class="control-button" id="play-button">▶️</button>
-			<!-- Pause Button, hidden by default -->
-            <button class="control-button" id="pause-button" style="display: none;">⏸️</button>
-            <button class="control-button" id="next-button">⏭️</button>
-            <!-- Volume Control Slider -->
-			<div class="volume-control">
-                <input type="range" id="volume" min="0" max="100" value="50">
+            <div class="col-8">
+                <div class="info">
+                    <h3 class="track-title h4">Track Title</h3>
+                    <p class="artist-name">Artist Name</p>
+                </div>
             </div>
         </div>
         
-		<!-- Playback Duration Section -->
-        <div class="duration">
-            <span id="current-time">0:00</span> <!-- Current Playback Time -->
-            <input type="range" id="progress-bar" value="0" min="0" max="100"> <!-- Progress Bar of the Music Track -->
-            <span id="total-time">4:48</span> <!-- Total Track Duration -->
+        <!-- Music Player Section -->
+        <div class="d-flex justify-content-center align-items-center mb-4">
+            <button class="btn btn-outline-secondary mx-2" id="prev-button">⏮️</button>
+            <button class="btn btn-outline-primary mx-2" id="play-button">▶️</button>
+            <button class="btn btn-outline-warning mx-2" id="pause-button" style="display: none;">⏸️</button>
+            <button class="btn btn-outline-secondary mx-2" id="next-button">⏭️</button>
+        </div>
+        
+        <!-- Volume Control Section -->
+        <div class="d-flex justify-content-center mb-4">
+            <label for="volume" class="form-label">Volume</label>
+            <input type="range" id="volume" min="0" max="100" value="50" class="form-range mx-2" style="width: 150px;">
+        </div>
+        
+        <!-- Playback Duration Section -->
+        <div class="d-flex justify-content-center align-items-center">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress-bar" value="0" min="0" max="100" class="form-range mx-2" style="width: 50%;">
+            <span id="total-time">4:48</span>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb8p+/Y6jpNUI5Y2z4t5T/Zh5AElVZm6fF3OXtoF4T+6C4l0t" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8Fq6e3lg5E5bZg5L1qA3DYxV0FxVp6q25jTKLzt27H5j5g" crossorigin="anonymous"></script>
 
     <script>
         // JavaScript For Player Functionality
@@ -61,5 +72,6 @@
 
         // Other controls (next and previous button) would have similar event listeners
     </script>
+
 </body>
 </html>
