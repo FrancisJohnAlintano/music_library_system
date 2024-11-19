@@ -1,7 +1,7 @@
 # music_library_system
-Do note that this is just a student project for the requirements in my college school.
+Note: In all honesty, I can't say as well that these will be the legitimate music library website but just a reference on what will it be look like and the way it operated. I'm quite not serious about it however here we are, somewhat of attempted at creating it.
 
-**Milestone 1 - HTML and CSS Template (Francis John H. Alintano)**
+**Music Library Website**
 
 Key Features Overview or Project Structure:
 
